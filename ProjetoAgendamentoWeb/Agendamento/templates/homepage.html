@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block body %}
+
+{% include "desenhohomepage.html" %}
+
+<div class="container">
+    <div class="conteudoTexto">
+        <div class="subtitulo">
+            <text>Agendamento</text>
+        </div>
+        <div class="titulo">
+            <text>Service Admin</text>
+        </div>
+        <div class="subTexto">
+            <p>Caso não tenha um usuário, cadastre-se no botão abaixo.</p>
+        </div>
+        <div class="botaoCadastro" style="margin-top: 5%;">
+            <a href="cadastroUsuario" class="btn btn-custom">Cadastre-se acesso rapido</a>
+        </div>
+    </div>
+    <div class="imagemHomepage">
+        <img src="{% static 'img/iconeUsuario.png' %}" alt="">
+    </div>
+</div>
+
+
+
+{% endblock %}
